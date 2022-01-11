@@ -1,187 +1,195 @@
 @font-face {
-    font-family: 'MiSans';
-    src: url('../fonts/MiSans-Light.woff');
+  font-family: 'MiSans';
+  src: url('../fonts/MiSans-Light.woff');
 }
 
 body {
-    font-family: "MiSans";
-    position: relative;
-    width: 100%;
-    height: 100%;
-    color: #000;
-    background-color: #fff;
+  font-family: "MiSans";
+  position: relative;
+  width: 100%;
+  height: 100%;
+  color: #000;
+  background-color: #fff;
 }
 
 a {
-    transition: all .2s ease-in-out;
-    color: #01a2e7;
+  transition: all .2s ease-in-out;
+  color: #01a2e7;
 }
 
 .masthead {
-    position: relative;
-    width: 100%;
-    height: auto;
-    padding: 200px 0;
-    text-align: center;
-    color: #fff;
-    background: no-repeat center center;
-    background-color: #000;
-    background-size: cover;
-    background-attachment: scroll;
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: #fff;
+  background: no-repeat center center;
+  background-color: #000;
+  background-size: cover;
+  background-attachment: scroll;
 }
 
 @media (min-width: 768px) {
-    .masthead {
-        height: 100%;
-        padding: 0;
-    }
+  .masthead {
+    height: 100%;
+    padding: 0;
+  }
 }
 
 .masthead:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #6f6666;
-    opacity: 0.5;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #6f6666;
+  opacity: 0.5;
 }
 
 .masthead .page-heading {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-    font-family: 'MiSans';
-    font-weight: 700;
-    margin: 0 0 35px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+  font-family: 'MiSans';
+  font-weight: 700;
+  margin: 0 0 35px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 @media (min-width: 992px) {
-    #mainNav.navbar-shrink {
-        position: fixed;
-        top: -80px;
-        transition: transform 1s;
-        border-bottom: 0px solid rgba(255, 255, 255, .3);
-        background-color: transparent;
-    }
+  #mainNav.navbar-shrink {
+    position: fixed;
+    top: -80px;
+    transition: transform 1s;
+    border-bottom: 0px solid rgba(255,255,255,.3);
+    background-color: transparent;
+  }
 }
 
 #mainNav {
+  font-family: 'MiSans';
+  margin-bottom: 0;
+  text-transform: uppercase;
+  border-bottom: 0px solid rgba(255,255,255,.3);
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  #mainNav {
     font-family: 'MiSans';
     margin-bottom: 0;
     text-transform: uppercase;
-    border-bottom: 0px solid rgba(255, 255, 255, .3);
-    background-color: transparent;
-}
-
-@media (max-width: 768px) {
-    #mainNav {
-        font-family: 'MiSans';
-        margin-bottom: 0;
-        text-transform: uppercase;
-        border-bottom: 0px solid rgba(255, 255, 255, .3);
-        background-color: #fff;
-    }
+    border-bottom: 0px solid rgba(255,255,255,.3);
+    background-color: #2fb7f1;
+  }
 }
 
 #mainNav a:hover {
-    color: #01a2e7;
+  color: #01a2e7;
 }
 
 @media (max-width: 768px) {
-    #mainNav a {
-        color: #000;
-    }
+  #mainNav a {
+    color: #ffffff;
+  }
 }
 
 @media (max-width: 768px) {
-    #mainNav .navbar-toggler {
-        font-size: 14px;
-        padding: 11px;
-        color: rgb(133, 133, 133);
-        border: 1px solid rgb(51, 51, 51);
-    }
+  #mainNav .navbar-toggler {
+    font-size: 14px;
+    padding: 11px;
+    color: rgb(255,255,255);
+    border: 1px solid rgb(255,255,255);
+  }
 }
 
 ::selection {
-    color: #01a2e7;
-    background: rgba(187, 254, 217, 0.3);
+  color: #01a2e7;
+  background: rgba(187,254,217,0.3);
 }
 
 .article-list {
-    color: #313437;
-    background-color: #fff;
+  color: #313437;
+  background-color: #fff;
 }
 
 .article-list p {
-    color: #7d8285;
+  color: #7d8285;
 }
 
 .article-list h2 {
-    font-weight: bold;
-    margin-bottom: 40px;
-    padding-top: 40px;
-    color: inherit;
+  font-weight: bold;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  color: inherit;
 }
 
-@media (max-width: 767px) {
-    .article-list h2 {
-        margin-bottom: 25px;
-        padding-top: 25px;
-        font-size: 24px;
-    }
+@media (max-width:767px) {
+  .article-list h2 {
+    margin-bottom: 25px;
+    padding-top: 25px;
+    font-size: 24px;
+  }
 }
 
 .article-list .articles {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
 }
 
 .article-list .item {
-    padding-top: 50px;
-    min-height: 425px;
-    text-align: center;
+  padding-top: 50px;
+  min-height: 425px;
+  text-align: center;
 }
 
 .article-list .item .name {
-    font-weight: bold;
-    font-size: 16px;
-    margin-top: 20px;
-    color: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 20px;
+  color: inherit;
 }
 
 .article-list .item .description {
-    font-size: 14px;
-    margin-top: 15px;
-    margin-bottom: 0;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-bottom: 0;
 }
 
 .article-list .item .action {
-    font-size: 24px;
-    width: 24px;
-    margin: 22px auto 0;
-    line-height: 1;
-    display: block;
-    color: #4f86c3;
-    opacity: 0.85;
-    transition: opacity 0.2s;
-    text-decoration: none;
+  font-size: 24px;
+  width: 24px;
+  margin: 22px auto 0;
+  line-height: 1;
+  display: block;
+  color: #4f86c3;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+  text-decoration: none;
 }
 
 .article-list .item .action:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .page-link {
-    position: relative;
-    display: block;
-    color: #6dd0fb;
-    text-decoration: none;
-    background-color: #fff;
-    border: 1px solid #dee2e6;
-    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  position: relative;
+  display: block;
+  color: #6dd0fb;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.fixed-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
 
