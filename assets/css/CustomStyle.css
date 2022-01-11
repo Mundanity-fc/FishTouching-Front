@@ -193,3 +193,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   z-index: 1030;
 }
 
+Footer a {
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
