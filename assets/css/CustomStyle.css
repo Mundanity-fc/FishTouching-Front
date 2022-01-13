@@ -200,3 +200,31 @@ Footer a {
   text-decoration: none;
 }
 
+main {
+  margin-top: 20px;
+}
+
+#MainArticle p {
+  margin: 0 0 0;
+  text-indent: 50px;
+}
+
+#ArticleInfo {
+  border: var(--bs-info);
+  border-style: dotted;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+#ArticleInfo img {
+  margin-top: 10px;
+}
+
+#username {
+  margin-top: 10px;
+}
+
+#InfoTable a {
+  text-decoration: none;
+}
+
