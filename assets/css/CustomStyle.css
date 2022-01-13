@@ -228,3 +228,43 @@ main {
   text-decoration: none;
 }
 
+#login {
+  max-width: 320px;
+  margin: auto;
+}
+
+#login a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.form-control:focus {
+  border-color: var(--bs-info);
+  box-shadow: 0 0 0 0.25rem rgb(20,212,255,0.48);
+  color: #01a2e7;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  color: #000000;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+#submit {
+  color: #fff;
+  background-color: #2fb7f1;
+  box-shadow: 3px 3px 3px rgba(139,204,208,0.57);
+}
+
