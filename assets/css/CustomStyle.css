@@ -204,11 +204,16 @@ main {
   margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  text-align: start;
+}
+
+#introduction p {
+  text-indent: 2rem;
 }
 
 #MainArticle p {
   margin: 0 0 0;
-  text-indent: 50px;
+  text-indent: 2rem;
 }
 
 #ArticleInfo {
