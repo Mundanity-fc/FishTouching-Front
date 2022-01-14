@@ -113,11 +113,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   background: rgba(187,254,217,0.3);
 }
 
-.article-list {
-  color: #313437;
-  background-color: #fff;
-}
-
 .article-list p {
   color: #7d8285;
 }
@@ -273,5 +268,37 @@ main {
   color: #fff;
   background-color: #2fb7f1;
   box-shadow: 3px 3px 3px rgba(139,204,208,0.57);
+}
+
+#catalog-list a {
+  display: block;
+  color: #ff7c7c;
+  text-decoration: none;
+}
+
+#catalog-list a:hover {
+  text-indent: 2rem;
+  background: #d1f1ff;
+  border-radius: 0.5rem;
+}
+
+#catalog-list td {
+  margin: 0;
+}
+
+#catalog-list {
+  border-radius: 0.5rem;
+  border: dashed 1px #66ccff;
+  overflow: hidden;
+  margin-left: 10px;
+  flex: 1;
+}
+
+#catalog-article {
+  flex: 2;
+  margin-left: 10px;
+  /*position: relative;*/
+  /*background: #4dceff;*/
+  border-radius: 0.5rem;
 }
 
