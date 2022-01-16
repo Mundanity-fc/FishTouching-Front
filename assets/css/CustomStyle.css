@@ -270,23 +270,23 @@ main {
   box-shadow: 3px 3px 3px rgba(139,204,208,0.57);
 }
 
-#catalog-list a {
+.sidebar-list a {
   display: block;
   color: #ff7c7c;
   text-decoration: none;
 }
 
-#catalog-list a:hover {
+.sidebar-list a:hover {
   text-indent: 2rem;
   background: #d1f1ff;
   border-radius: 0.5rem;
 }
 
-#catalog-list td {
+.sidebar-list td {
   margin: 0;
 }
 
-#catalog-list {
+.sidebar-list {
   border-radius: 0.5rem;
   border: dashed 1px #66ccff;
   overflow: hidden;
@@ -297,8 +297,48 @@ main {
 #catalog-article {
   flex: 2;
   margin-left: 10px;
-  /*position: relative;*/
-  /*background: #4dceff;*/
-  border-radius: 0.5rem;
+  position: relative;
+}
+
+.messages {
+  clear: both;
+  float: left;
+  padding: 6px 10px 7px;
+  border-radius: 10px 10px 10px 0;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 8px 0;
+  line-height: 1.4;
+  margin-left: 35px;
+  position: relative;
+  text-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+}
+
+.messages::before {
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  border-top: 6px solid rgba(0, 0, 0, 0.3);
+  left: 0;
+  border-right: 7px solid transparent;
+}
+
+.messages .avatar {
+  position: absolute;
+  z-index: 1;
+  bottom: -15px;
+  left: -35px;
+  border-radius: 30px;
+  width: 30px;
+  height: 30px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  /*border: 2px solid rgba(255, 255, 255, 0.24);*/
+}
+
+.messages .avatar img {
+  width: 100%;
+  height: auto;
+  border-style: none;
 }
 
