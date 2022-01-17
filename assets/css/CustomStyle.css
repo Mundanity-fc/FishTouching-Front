@@ -200,6 +200,8 @@ main {
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: start;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 #introduction p {
@@ -302,15 +304,15 @@ main {
 
 .messages {
   clear: both;
-  float: left;
   padding: 6px 10px 7px;
   border-radius: 10px 10px 10px 0;
   background: rgba(0, 0, 0, 0.3);
-  margin: 8px 0;
+  margin: 10px auto;
   line-height: 1.4;
-  margin-left: 35px;
   position: relative;
   text-shadow: 0 1px 1px rgb(0 0 0 / 20%);
+  width: auto;
+  max-width: 800px;
 }
 
 .messages::before {
@@ -320,25 +322,5 @@ main {
   border-top: 6px solid rgba(0, 0, 0, 0.3);
   left: 0;
   border-right: 7px solid transparent;
-}
-
-.messages .avatar {
-  position: absolute;
-  z-index: 1;
-  bottom: -15px;
-  left: -35px;
-  border-radius: 30px;
-  width: 30px;
-  height: 30px;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  /*border: 2px solid rgba(255, 255, 255, 0.24);*/
-}
-
-.messages .avatar img {
-  width: 100%;
-  height: auto;
-  border-style: none;
 }
 
