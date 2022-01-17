@@ -55,7 +55,7 @@ a {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: 'MiSans';
   font-weight: 700;
-  margin: 0 0 35px;
+  margin: 0 0 10px;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
@@ -303,11 +303,12 @@ main {
 }
 
 .messages {
+  text-indent: 2rem;
   clear: both;
-  padding: 6px 10px 7px;
+  padding: 10px 15px 10px 15px;
   border-radius: 10px 10px 10px 0;
   background: rgba(0, 0, 0, 0.3);
-  margin: 10px auto;
+  margin: 10px auto 20px;
   line-height: 1.4;
   position: relative;
   text-shadow: 0 1px 1px rgb(0 0 0 / 20%);
