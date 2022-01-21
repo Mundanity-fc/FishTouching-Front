@@ -208,10 +208,6 @@ main {
   text-indent: 2rem;
 }
 
-#MainArticle p {
-  margin: 0 0 0;
-  text-indent: 2rem;
-}
 
 #ArticleInfo {
   border: var(--bs-info);
@@ -325,3 +321,6 @@ main {
   border-right: 7px solid transparent;
 }
 
+.editormd-tex {
+  font-size: 12px;
+}
