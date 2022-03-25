@@ -3,13 +3,22 @@
   src: url('../fonts/MiSans-Light.woff');
 }
 
+header {
+  filter: drop-shadow(-2px -2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.15));
+  border-radius: 0.5rem;
+}
+
 body {
-  font-family: "MiSans";
+  font-family: "MiSans", "Meiryo UI", "YaHei Consolas Hybrid", Consolas, "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, monospace, monospace;
   position: relative;
   width: 100%;
   height: 100%;
   color: #000;
   background-color: #fff;
+}
+
+.btn{
+  font-family: "MiSans", "Meiryo UI", "YaHei Consolas Hybrid", Consolas, "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, monospace, monospace;
 }
 
 a {
@@ -53,7 +62,7 @@ a {
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-family: 'MiSans';
+  font-family: "MiSans", "Meiryo UI", "YaHei Consolas Hybrid", Consolas, "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, monospace, monospace;
   font-weight: 700;
   margin: 0 0 10px;
   letter-spacing: 1px;
@@ -65,25 +74,25 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     position: fixed;
     top: -80px;
     transition: top 0.5s;
-    border-bottom: 0px solid rgba(255,255,255,.3);
-    background-color: rgba(20,212,255,0.48);
+    border-bottom: 0 solid rgba(255, 255, 255, .3);
+    background-color: rgba(20, 212, 255, 0.48);
   }
 }
 
 #mainNav {
-  font-family: 'MiSans';
+  font-family: "MiSans", "Meiryo UI", "YaHei Consolas Hybrid", Consolas, "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, monospace, monospace;
   margin-bottom: 0;
   text-transform: uppercase;
-  border-bottom: 0px solid rgba(255,255,255,.3);
+  border-bottom: 0 solid rgba(255, 255, 255, .3);
   background-color: transparent;
 }
 
 @media (max-width: 768px) {
   #mainNav {
-    font-family: 'MiSans';
+    font-family: "MiSans", "Meiryo UI", "YaHei Consolas Hybrid", Consolas, "Malgun Gothic", "Segoe UI", "Trebuchet MS", Helvetica, monospace, monospace;
     margin-bottom: 0;
     text-transform: uppercase;
-    border-bottom: 0px solid rgba(255,255,255,.3);
+    border-bottom: 0 solid rgba(255, 255, 255, .3);
     background-color: #2fb7f1;
   }
 }
@@ -103,14 +112,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   #mainNav .navbar-toggler {
     font-size: 14px;
     padding: 11px;
-    color: rgb(255,255,255);
-    border: 1px solid rgb(255,255,255);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
   }
 }
 
 ::selection {
   color: #01a2e7;
-  background: rgba(187,254,217,0.3);
+  background: rgba(187, 254, 217, 0.3);
 }
 
 .article-list p {
@@ -124,7 +133,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   color: inherit;
 }
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .article-list h2 {
     margin-bottom: 25px;
     padding-top: 25px;
@@ -178,7 +187,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   text-decoration: none;
   background-color: #fff;
   border: 1px solid #dee2e6;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 .fixed-top {
@@ -189,7 +198,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   z-index: 1030;
 }
 
-Footer a {
+footer a {
   color: #000000;
   font-size: 14px;
   text-decoration: none;
@@ -213,7 +222,8 @@ main {
   border: var(--bs-info);
   border-style: dotted;
   border-width: 1px;
-  border-radius: 5px;
+  filter: drop-shadow(-2px -2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.15));
+  border-radius: 0.5rem;
 }
 
 #ArticleInfo img {
@@ -228,19 +238,18 @@ main {
   text-decoration: none;
 }
 
-#login {
-  max-width: 320px;
-  margin: auto;
-}
-
-#login a {
+form a {
   color: #ffffff;
   text-decoration: none;
 }
 
+form a:hover{
+  color: #0dcaf0;
+}
+
 .form-control:focus {
   border-color: var(--bs-info);
-  box-shadow: 0 0 0 0.25rem rgb(20,212,255,0.48);
+  box-shadow: 0 0 0 0.25rem rgb(20, 212, 255, 0.48);
   color: #01a2e7;
 }
 
@@ -259,13 +268,13 @@ main {
   -moz-appearance: none;
   appearance: none;
   border-radius: 0.25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
 #submit {
   color: #fff;
   background-color: #2fb7f1;
-  box-shadow: 3px 3px 3px rgba(139,204,208,0.57);
+  box-shadow: 3px 3px 3px rgba(139, 204, 208, 0.57);
 }
 
 .sidebar-list a {
@@ -323,4 +332,20 @@ main {
 
 .editormd-tex {
   font-size: 12px;
+}
+
+#catalog-list {
+  filter: drop-shadow(-2px -2px 2px rgba(0, 0, 0, 0.1)) drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.15));
+  border-radius: 0.5rem;
+}
+
+form {
+  backdrop-filter: blur(5px);
+  position: relative;
+  max-width: 360px;
+  margin: auto;
+  background: inherit;
+  padding: 2rem;
+  border-radius: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }

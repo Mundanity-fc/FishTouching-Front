@@ -8,8 +8,8 @@
     position: relative;
     font-size: 1.2rem;
     font-weight: 400;
-    background: #ff7c7c;
-    color: #000000;
+    background: #fc9a9a;
+    color: #000;
 }
 
 .speech-bubble-right {
@@ -22,13 +22,13 @@
     position: relative;
     font-size: 1.2rem;
     font-weight: 400;
-    background: #2fb7f1;
-    color: #000000;
+    background: #d1f1ff;
+    color: #000;
 }
 
 .speech-bubble::before {
     border: 12.5px solid transparent;
-    border-top: 12.5px solid #ff7c7c;
+    border-top: 12.5px solid #fc9a9a;
     border-bottom: 0;
     height: 0;
     width: 0;
@@ -44,7 +44,7 @@
 
 .speech-bubble-right::before {
     border: 12.5px solid transparent;
-    border-top: 12.5px solid #2fb7f1;
+    border-top: 12.5px solid #d1f1ff;
     border-bottom: 0;
     height: 0;
     width: 0;
@@ -52,10 +52,10 @@
     content: "";
     display: block;
     position: absolute;
-    right: 1rem;
+    right: 2rem;
     bottom: -25px;
     transform-origin: center;
-    transform: rotate(90deg) skew(-25deg) translateY(16.6666666667px);
+    transform: rotate(0deg) skew(-25deg) translateY(-1px);
 }
 
 .speech-bubble cite {
@@ -72,7 +72,7 @@
 .speech-bubble-right cite {
     position: absolute;
     bottom: -2rem;
-    right: 3rem;
+    right: 4rem;
     font-size: 1rem;
     font-style: normal;
     font-weight: 300;
